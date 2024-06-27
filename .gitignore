@@ -8,9 +8,9 @@
 *.ctxt
 
 # Images
-.jpeg
-.jpg
-.png
+*.jpeg
+*.jpg
+*.png
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
