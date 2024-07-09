@@ -7,6 +7,10 @@ public class ContaBancaria {
     private double saldo;
     private boolean status;
 
+    public int getRandomNumber(int min, int max) {
+        return (int) ((Math.random() * (max - min)) + min);
+    }
+
     public ContaBancaria() {
         setSaldo(0);
         setStatus(false);
@@ -59,6 +63,7 @@ public class ContaBancaria {
         } else {
             System.out.println("Conta criada com sucesso!");
             setStatus(true);
+            setNumConta(getRandomNumber(0, 13000));
         }
         if (getTipo() == "cc") {
             setSaldo(getSaldo() + 50);
